@@ -1,0 +1,75 @@
+
+body {
+    background-image: url("Moving.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #fce4f3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #800080;
+}
+
+h2 {
+    color: #c2185b;
+}
+
+form {
+    background-color: #fff0f8;
+    padding: 25px;
+    width: 450px;
+    max-width: 85%;
+    margin: 30px auto;
+    border: 3px solid #800080;
+    border-radius: 15px;
+}
+
+input, select {
+    padding: 7px;
+    border: 1px solid #c77dce;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #c2185b;
+}
+
+.password-box {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #c77dce;
+    border-radius: 5px;
+}
+
+.password-box input {
+    border: none;
+    width: 145px;
+}
+
+.eye {
+    background-color: white;
+    color: purple;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #c2185b;
+}

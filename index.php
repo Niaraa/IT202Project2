@@ -1,0 +1,77 @@
+
+
+<?php
+session_start();
+require_once "db.php";
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moving On Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Moving On Up (MOU)</h1>
+<h2>Moving Representative Login</h2>
+
+<form id="loginForm" name="loginForm" method="POST" action="login.php">
+
+    <label>First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <br><br>
+
+    <label>Password:</label>
+    <span class="password-box">
+        <input type="password" id="password" name="password">
+        <button type="button" class="eye" onclick="showPassword()">👁</button>
+    </span>
+    <br><br>
+
+    <label>Representative ID:</label>
+    <input type="text" id="repID" name="repID">
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone" name="phone"
+           placeholder="555-123-4567 ext 123">
+    <br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email" name="email">
+    <br><br>
+
+    <label>
+        <input type="checkbox" id="emailConfirm" name="emailConfirm">
+        Email Confirmation
+    </label>
+    <br><br>
+
+    <label>Transaction:</label>
+    <select id="transaction" name="transaction">
+        <option value="">Select Transaction</option>
+        <option>Search A Moving Representative's Accounts</option>
+        <option>Book a Client's Moving Event</option>
+        <option>Cancel A Client's Moving Event</option>
+        <option>Request Moving Services</option>
+        <option>Request Additional Moving Services</option>
+        <option>Create A New Client Account</option>
+    </select>
+    <br><br>
+
+    <input type="submit" id="submitButton" name="submitButton" value="Submit">
+    <input type="reset" id="resetButton" name="resetButton" value="Reset">
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
